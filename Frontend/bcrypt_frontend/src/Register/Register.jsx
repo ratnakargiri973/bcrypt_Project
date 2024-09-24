@@ -9,7 +9,7 @@ function Register() {
     const handleRegister = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post('http://localhost:1430/api/auth/register', {
+            const response = await axios.post('https://bcrypt-project.onrender.com/api/auth/register', {
                 userName,
                 Email,
                 Password,
